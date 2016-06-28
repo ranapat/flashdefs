@@ -1,11 +1,18 @@
-﻿//****************************************************************************
-// ActionScript Standard Library
-// flash.filters.BitmapFilter object
-//****************************************************************************
-package flash.filters {
-
-public class BitmapFilter
+﻿package flash.filters
 {
-	public function clone():BitmapFilter;
-}
+
+    public class BitmapFilter extends Object
+    {
+
+        public function BitmapFilter()
+        {
+            return;
+        }// end function
+
+        public function clone() : BitmapFilter
+        {
+            return null;
+        }// end function
+
+    }
 }

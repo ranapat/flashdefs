@@ -1,16 +1,18 @@
-﻿//****************************************************************************
-// ActionScript Standard Library
-// FileReference object
-//****************************************************************************
-package flash.net {
-
-public class FileReferenceList
+﻿package flash.net
 {
-	var fileList:Array;
+    import flash.events.*;
 
-	public function FileReferenceList();
-	public function browse(typelist:Array):Boolean;
-	function addListener(listener:Object):Void;
-	function removeListener(listener:Object):Boolean;	
-}
+    public class FileReferenceList extends EventDispatcher
+    {
+
+        public function FileReferenceList()
+        {
+            return;
+        }// end function
+
+        public function get fileList() : Array;
+
+        public function browse(param1:Array = null) : Boolean;
+
+    }
 }

@@ -1,37 +1,63 @@
-﻿//****************************************************************************
-// ActionScript Standard Library
-// Math object
-//****************************************************************************
-package {
-
-public class Math
+﻿package 
 {
-	static var E:Number;
-	static var LN10:Number;
-	static var LN2:Number;
-	static var LOG10E:Number;
-	static var LOG2E:Number;
-	static var PI:Number;
-	static var SQRT1_2:Number;
-	static var SQRT2:Number;
+    import Math.*;
 
-	static function abs(x:Number):Number;
-	static function acos(x:Number):Number;
-	static function asin(x:Number):Number;
-	static function atan(tangent:Number):Number;
-	static function atan2(y:Number,x:Number):Number;
-	static function ceil(x:Number):Number;
-	static function cos(x:Number):Number;
-	static function exp(x:Number):Number;
-	static function floor(x:Number):Number;
-	static function log(x:Number):Number;
-	static function max(x:Number,y:Number):Number;
-	static function min(x:Number,y:Number):Number;
-	static function pow(x:Number,y:Number):Number;
-	static function random():Number;
-	static function round(x:Number):Number;
-	static function sin(x:Number):Number;
-	static function sqrt(x:Number):Number;
-	static function tan(x:Number):Number;
-}
+    final public class Math extends Object
+    {
+        public static const E:Number = 2.71828;
+        public static const LN10:Number = 2.30259;
+        public static const LN2:Number = 0.693147;
+        public static const LOG10E:Number = 0.434294;
+        public static const LOG2E:Number = 1.4427;
+        public static const PI:Number = 3.14159;
+        public static const SQRT1_2:Number = 0.707107;
+        public static const SQRT2:Number = 1.41421;
+        private static const NegInfinity:Number = -1.#INF;
+
+        public function Math()
+        {
+            return;
+        }// end function
+
+        private static function _min(param1:Number, param2:Number) : Number;
+
+        private static function _max(param1:Number, param2:Number) : Number;
+
+        public static function abs(param1:Number) : Number;
+
+        public static function acos(param1:Number) : Number;
+
+        public static function asin(param1:Number) : Number;
+
+        public static function atan(param1:Number) : Number;
+
+        public static function ceil(param1:Number) : Number;
+
+        public static function cos(param1:Number) : Number;
+
+        public static function exp(param1:Number) : Number;
+
+        public static function floor(param1:Number) : Number;
+
+        public static function log(param1:Number) : Number;
+
+        public static function round(param1:Number) : Number;
+
+        public static function sin(param1:Number) : Number;
+
+        public static function sqrt(param1:Number) : Number;
+
+        public static function tan(param1:Number) : Number;
+
+        public static function atan2(param1:Number, param2:Number) : Number;
+
+        public static function pow(param1:Number, param2:Number) : Number;
+
+        public static function max(param1:Number = -1.#INF, param2:Number = -1.#INF, ... args) : Number;
+
+        public static function min(param1:Number = 1.#INF, param2:Number = 1.#INF, ... args) : Number;
+
+        public static function random() : Number;
+
+    }
 }
